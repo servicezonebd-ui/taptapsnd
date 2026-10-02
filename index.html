@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Tap Send - Home</title>
+    <meta name="description" content="Send money internationally with Tap Tap Send. Fast, secure, and low-cost transfers.">
+    <meta property="og:title" content="Tap Tap Send - Global Money Transfer">
+    <meta property="og:image" content="https://taptapsndbd.com/logo-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="company-name">Tap Tap Send</a>
+        </div>
+        <div class="header-right">
+            <select class="lang-selector">
+                <option value="bn">বাংলা</option>
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Slide Menu (5 Pages Navigation) -->
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span>
+        <a href="index.html">হোম (Home)</a>
+        <a href="about.html">কোম্পানি পরিচিতি (About)</a>
+        <a href="security.html">নিরাপত্তা ও ভুয়া চক্র (Security)</a>
+        <a href="services.html">সার্ভিস ও কান্ট্রি (Services)</a>
+        <a href="contact.html">যোগাযোগ (Contact)</a>
+    </div>
+
+    <!-- Animation Section -->
+    <div class="animation-section">
+        <div class="bird-container">
+            <span class="bird">🕊️</span>
+            <span class="envelope">✉️</span>
+        </div>
+        <div class="tagline">ইউরোপ থেকে পরিচালিত, মধ্যপ্রাচ্যসহ বিশ্বজুড়ে বিশ্বস্ত সেবা</div>
+    </div>
+
+    <div class="main-container">
+        <!-- Live Exchange Rate & Calculator -->
+        <div class="transfer-card">
+            <h2>মানি ট্রান্সফার ক্যালকুলেটর</h2>
+            <div class="input-group">
+                <label>আপনি পাঠান (Send Amount)</label>
+                <div class="input-row">
+                    <input type="number" id="sendAmount" value="100" oninput="calculateExchange()">
+                    <select id="sendCurrency" onchange="calculateExchange()">
+                        <option value="EUR">EUR (€)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="USD">USD ($)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>প্রাপক পাবেন (Recipient Gets)</label>
+                <div class="input-row">
+                    <input type="text" id="receiveAmount" readonly>
+                    <select>
+                        <option value="BDT">BDT (টাকা)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>পেমেন্ট মাধ্যম</label>
+                <select class="full-select">
+                    <option>সরাসরি ভিসা/মাস্টার ডেবিট/ক্রেডিট কার্ড</option>
+                </select>
+            </div>
+
+            <button class="send-money-btn" onclick="alert('ওটিপি ও লাইভ কেওয়াইসি (KYC) ধাপে নিয়ে যাওয়া হচ্ছে...')">টাকা পাঠান (Send Money)</button>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="download-section">
+            <a href="#" class="store-btn">📥 Google Play</a>
+            <a href="#" class="store-btn">🍏 App Store</a>
+        </div>
+
+        <!-- Scrolling Banner -->
+        <div class="banner-slider">
+            <div class="slides-wrapper">
+                <div class="slide slide-1"><h3>ইউরোপ থেকে মধ্যপ্রাচ্য ও বাংলাদেশ - সেরা রেট</h3></div>
+                <div class="slide slide-2"><h3>নিরাপদ কার্ড পেমেন্ট ও ইনস্ট্যান্ট ট্রান্সফার</h3></div>
+                <div class="slide slide-3"><h3>ভিপিএন (VPN) ব্যবহার সম্পূর্ণ নিষিদ্ধ ও দণ্ডনীয়</h3></div>
+            </div>
+        </div>
+
+        <!-- Flag Notice Bar -->
+        <div class="notice-bar">
+            <div class="notice-content">
+                🇪🇺 ইউরোপ | 🇸🇦 সৌদি আরব | 🇦🇪 দুবাই/ইউএই | 🇶🇦 কাতার | 🇴🇲 ওমান | 🇧🇩 বাংলাদেশ | (৮০+ দেশে সেবা চালু!) 🌍
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ Tap Tap Send. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('slideMenu').classList.toggle('active'); }
+        function calculateExchange() {
+            const amount = document.getElementById('sendAmount').value;
+            let rate = 130;
+            if(document.getElementById('sendCurrency').value === 'GBP') rate = 152;
+            if(document.getElementById('sendCurrency').value === 'USD') rate = 117;
+            document.getElementById('receiveAmount').value = (amount * rate).toFixed(2) + " BDT";
+        }
+        calculateExchange();
+    </script>
+</body>
+</html>
+

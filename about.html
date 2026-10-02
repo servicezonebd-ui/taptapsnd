@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tap Tap Send</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="company-name">Tap Tap Send</a>
+        </div>
+        <div class="header-right">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span>
+        <a href="index.html">হোম (Home)</a>
+        <a href="about.html">কোম্পানি পরিচিতি (About)</a>
+        <a href="security.html">নিরাপত্তা ও ভুয়া চক্র (Security)</a>
+        <a href="services.html">সার্ভিস ও কান্ট্রি (Services)</a>
+        <a href="contact.html">যোগাযোগ (Contact)</a>
+    </div>
+
+    <div class="main-container">
+        <div class="content-section">
+            <h2>কোম্পানি বিবরণ ও পরিচিতি (About Us)</h2>
+            <p><strong>Tap Tap Send</strong> মূলত ইউরোপীয় ইউনিয়নভুক্ত দেশগুলো থেকে সফলভাবে পরিচালিত একটি আন্তর্জাতিক মানি ট্রান্সফার কোম্পানি।</p>
+            <p>ইউরোপের বিভিন্ন দেশ থেকে শুরু করে বর্তমানে মধ্যপ্রাচ্যের বিভিন্ন দেশ (সৌদি আরব, সংযুক্ত আরব আমিরাত, কাতার, ওমান ইত্যাদি) এবং দক্ষিণ এশিয়ার বাংলাদেশসহ ৮০টিরও বেশি দেশে আমাদের সেবা সফলভাবে প্রসারিত হয়েছে।</p>
+            <p>প্রবাসীদের কষ্টার্জিত অর্থ সবচেয়ে কম খরচে এবং নিরাপদ উপায়ে পরিবারের কাছে পৌঁছে দেওয়াই আমাদের মূল লক্ষ্য।</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ Tap Tap Send. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('slideMenu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

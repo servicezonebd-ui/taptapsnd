@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Fraud Awareness - Tap Tap Send</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="company-name">Tap Tap Send</a>
+        </div>
+        <div class="header-right">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span>
+        <a href="index.html">হোম (Home)</a>
+        <a href="about.html">কোম্পানি পরিচিতি (About)</a>
+        <a href="security.html">নিরাপত্তা ও ভুয়া চক্র (Security)</a>
+        <a href="services.html">সার্ভিস ও কান্ট্রি (Services)</a>
+        <a href="contact.html">যোগাযোগ (Contact)</a>
+    </div>
+
+    <div class="main-container">
+        <div class="content-section" style="border-left: 5px solid #d9534f;">
+            <h2>রিয়েল বনাম ফেক (ফেইক) ট্যাপ ট্যাপ সেন্ড চেনার উপায়</h2>
+            <p>প্রতারক চক্র থেকে সাবধান! কোনটি আসল এবং কোনটি নকল তা নিচে দেওয়া হলো:</p>
+            
+            <div class="comparison-box">
+                <div class="real-side">
+                    <h3 style="color: #004d26;">🟢 রিয়েল (আসল) ট্যাপ ট্যাপ সেন্ড</h3>
+                    <ul>
+                        <li>অফিসিয়াল অ্যাপ ও ভেরিফাইড ওয়েবসাইট থেকে পরিচালিত হয়।</li>
+                        <li>সরাসরি অ্যাপের সিক্যুর গেটওয়ে দিয়ে ভিসা/মাস্টার কার্ড অ্যাড মানি করতে হয়।</li>
+                        <li>ব্যক্তিগত বিকাশ বা নগদে টাকা পাঠিয়ে ব্যালেন্স লোড করতে বলে না।</li>
+                        <li>অফিশিয়াল নম্বর বা ভেরিফাইড WhatsApp থেকে OTP পাঠানো হয়।</li>
+                    </ul>
+                </div>
+                <div class="fake-side">
+                    <h3 style="color: #d9534f;">🔴 ফেক (নকল) পেজ বা চক্র</h3>
+                    <ul>
+                        <li>আনভেরিফাইড পেজ খুলে লোভনীয় অফার বা কম রেট দেখায়।</li>
+                        <li>"আগে আমাদের ব্যক্তিগত বিকাশ/নগদ নম্বরে টাকা পাঠান"—এমন প্রতারণা করে।</li>
+                        <li>মেসেঞ্জারে ফেইক স্ক্রিনশট ও ফিশিং লিঙ্ক দেয়।</li>
+                        <li>ভিপিএন ব্যবহার করে অ্যাকাউন্ট চালাতে বলে।</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>ভেরিফিকেশন ও ভিপিএন নিষেধাজ্ঞা</h2>
+            <p><strong>OTP ভেরিফিকেশন:</strong> সরাসরি আপনার মোবাইল নম্বরে অথবা WhatsApp-এ ওটিপি কোড পাঠানো হয়।</p>
+            <p><strong>লাইভ কেওয়াইসি (KYC):</strong> রিয়েল-টাইম ফেস স্ক্যানিং ও আইডি কার্ড ভেরিফিকেশন বাধ্যতামূলক।</p>
+            <p style="color: #d9534f; margin-top: 8px; font-weight: bold;">⚠️ সতর্কতা: এই প্ল্যাটফর্মে কোনো ধরনের ভিপিএন (VPN) ব্যবহার করা সম্পূর্ণ অবৈধ।</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ Tap Tap Send. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('slideMenu').classList.toggle('active'); }
+    </script>
+</body>
+</html>

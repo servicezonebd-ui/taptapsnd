@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tap Tap Send</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="company-name">Tap Tap Send</a>
+        </div>
+        <div class="header-right">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <div class="slide-menu" id="slideMenu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span>
+        <a href="index.html">হোম (Home)</a>
+        <a href="about.html">কোম্পানি পরিচিতি (About)</a>
+        <a href="security.html">নিরাপত্তা ও ভুয়া চক্র (Security)</a>
+        <a href="services.html">সার্ভিস ও কান্ট্রি (Services)</a>
+        <a href="contact.html">যোগাযোগ (Contact)</a>
+    </div>
+
+    <div class="main-container">
+        <div class="content-section">
+            <h2>যোগাযোগ করুন (Contact Us)</h2>
+            <p>যেকোনো প্রয়োজনে আমাদের অফিসিয়াল সাপোর্ট টিমের সাথে যোগাযোগ করতে পারেন:</p>
+            <p><strong>ইমেইল:</strong> support@taptapsndbd.com</p>
+            <p><strong>হেল্পলাইন:</strong> অফিসিয়াল অ্যাপের ভেতর লাইভ চ্যাট অপশন ব্যবহার করুন।</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ Tap Tap Send. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById('slideMenu').classList.toggle('active'); }
+    </script>
+</body>
+</html>
